@@ -29,6 +29,8 @@ public abstract class AppDelegate implements IDelegate {
         this.rootView = rootView;
     }
 
+    ///////////////////////////////////////////////
+    ///////////////////////////////////////////////
     protected SparseArray<View> mViews = new SparseArray<View>();
 
     public <T extends View> T bindView(int id) {
@@ -50,5 +52,11 @@ public abstract class AppDelegate implements IDelegate {
         for (int id : ids) {
             get(id).setOnClickListener(listener);
         }
+    }
+
+    ////////////////////////////////////////////
+    ////////////////////////////////////////////
+    @Override
+    public void initWidget() {
     }
 }

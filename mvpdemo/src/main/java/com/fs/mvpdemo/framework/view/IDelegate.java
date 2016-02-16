@@ -11,4 +11,5 @@ import android.view.ViewGroup;
 public interface IDelegate {
     void create(LayoutInflater i, ViewGroup container, Bundle savedInstanceState);
     View getRootView();
+    void initWidget();
 }
