@@ -17,12 +17,19 @@ public class LoginDelegate extends AppDelegate {
     @Override
     public void initWidget() {
         super.initWidget();
-        TextView tv = get(R.id.textView);
-        tv.setText("设置文本");
+        TextView tvName = get(R.id.textView);
+        tvName.setText("设置姓名");
+        TextView tvAge = get(R.id.textView2);
+        tvAge.setText("设置年龄");
     }
 
-    public void setText(String text) {
+    public void setName(String text) {
         TextView tv = get(R.id.textView);
+        tv.setText(text);
+    }
+
+    public void setAge(String text) {
+        TextView tv = get(R.id.textView2);
         tv.setText(text);
     }
 }
