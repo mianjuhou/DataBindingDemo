@@ -6,7 +6,10 @@ import android.os.Bundle;
 import com.fs.mvpdemo.R;
 
 public class MainActivity extends AppCompatActivity {
-
+    /**
+     * fangdean
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
