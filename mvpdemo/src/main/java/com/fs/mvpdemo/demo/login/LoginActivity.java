@@ -1,5 +1,6 @@
 package com.fs.mvpdemo.demo.login;
 
+import android.support.design.widget.NavigationView;
 import android.view.View;
 
 import com.fs.mvpdemo.R;
@@ -15,6 +16,9 @@ public class LoginActivity extends DataBindActivity<LoginDelegate>{
     protected void bindEventListener() {
         super.bindEventListener();
         viewDelegate.setOnClickListener(listener,R.id.button,R.id.button2);
+
+        NavigationView nv;
+
     }
 
     @Override
